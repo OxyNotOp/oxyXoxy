@@ -14,7 +14,7 @@ from OxyXmusic import (ASSID, ASSMENTION, ASSNAME, ASSUSERNAME, BOT_ID, BOT_NAME
                    BOT_USERNAME, SUDOERS, app, db, userbot)
 from OxyXmusic.Core.Logger.Log import (startup_delete_last, startup_edit_last,
                                    startup_send_new)
-from OxyXmusic.Core.PyTgCalls.OxyXmusic import run
+from OxyXmusic.Core.PyTgCalls.Yukki import run
 from OxyXmusic.Database import get_active_chats, get_sudoers, remove_active_chat
 from OxyXmusic.Inline import private_panel
 from OxyXmusic.Plugins import ALL_MODULES
