@@ -66,7 +66,7 @@ async def start_stream(
         return
     else:
         try:
-            await OxyXmusic.pytgcalls.join_group_call(
+            await Yukki.pytgcalls.join_group_call(
                 CallbackQuery.message.chat.id,
                 InputStream(
                     InputAudioStream(
@@ -145,7 +145,7 @@ async def start_stream_audio(
         return
     else:
         try:
-            await OxyXmusic.pytgcalls.join_group_call(
+            await Yukki.pytgcalls.join_group_call(
                 message.chat.id,
                 InputStream(
                     InputAudioStream(
