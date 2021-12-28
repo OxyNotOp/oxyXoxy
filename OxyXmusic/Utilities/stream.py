@@ -8,7 +8,7 @@ from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream, InputStream
 
 from OxyXmusic import BOT_USERNAME, db_mem
-from OxyXmusic.Core.PyTgCalls import Queues, Yukki
+from OxyXmusic.Core.PyTgCalls import Queues, OxyXmusic
 from OxyXmusic.Database import (add_active_chat, is_active_chat, music_off,
                             music_on)
 from OxyXmusic.Inline import (audio_markup, audio_markup2, primary_markup,
