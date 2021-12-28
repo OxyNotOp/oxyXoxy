@@ -105,7 +105,7 @@ async def admin_risghts(_, CallbackQuery):
             await CallbackQuery.message.reply_text(
                 f"No more music in __Queue__ \n\nLeaving Voice Chat..Button Used By :- {CallbackQuery.from_user.mention}"
             )
-            await Yukki.pytgcalls.leave_group_call(chat_id)
+            await OxyXmusic.pytgcalls.leave_group_call(chat_id)
             await CallbackQuery.message.delete()
             await CallbackQuery.answer(
                 "Skipped. No more music in Queue", show_alert=True
@@ -139,7 +139,7 @@ async def admin_risghts(_, CallbackQuery):
                     None, download, videoid, mystic, title
                 )
                 raw_path = await convert(downloaded_file)
-                await Yukki.pytgcalls.change_stream(
+                await OxyXmusic.pytgcalls.change_stream(
                     chat_id,
                     InputStream(
                         InputAudioStream(
@@ -178,7 +178,7 @@ async def admin_risghts(_, CallbackQuery):
             else:
                 await CallbackQuery.message.delete()
                 await CallbackQuery.answer("Skipped!", show_alert=True)
-                await Yukki.pytgcalls.change_stream(
+                await OxyXmusic.pytgcalls.change_stream(
                     chat_id,
                     InputStream(
                         InputAudioStream(
