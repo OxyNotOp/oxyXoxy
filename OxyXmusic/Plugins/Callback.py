@@ -319,7 +319,7 @@ async def play_playlist(_, CallbackQuery):
                 )
                 raw_path = await convert(downloaded_file)
                 try:
-                    await Yukki.pytgcalls.join_group_call(
+                    await OxyXmusic.pytgcalls.join_group_call(
                         chat_id,
                         InputStream(
                             InputAudioStream(
