@@ -10,7 +10,7 @@ from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream, InputStream
 
 from OxyXmusic import BOT_USERNAME, MUSIC_BOT_NAME, app, db_mem
-from OxyXmusic.Core.PyTgCalls import Queues, Yukki
+from OxyXmusic.Core.PyTgCalls import Queues, OxyXmusic
 from OxyXmusic.Core.PyTgCalls.Converter import convert
 from OxyXmusic.Core.PyTgCalls.Downloader import download
 from OxyXmusic.Database import (_get_playlists, delete_playlist, get_playlist,
