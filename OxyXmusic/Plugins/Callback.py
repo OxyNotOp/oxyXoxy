@@ -65,7 +65,7 @@ async def admin_risghts(_, CallbackQuery):
                 "Music is already Paused", show_alert=True
             )
         await music_off(chat_id)
-        await Yukki.pytgcalls.pause_stream(chat_id)
+        await OxyXmusic.pytgcalls.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             f"🎧 Voicechat Paused by {CallbackQuery.from_user.mention}!",
             reply_markup=audio_markup2,
@@ -78,7 +78,7 @@ async def admin_risghts(_, CallbackQuery):
                 "Music is already Resumed.", show_alert=True
             )
         await music_on(chat_id)
-        await Yukki.pytgcalls.resume_stream(chat_id)
+        await OxyXmusic.pytgcalls.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             f"🎧 Voicechat Resumed by {CallbackQuery.from_user.mention}!",
             reply_markup=audio_markup2,
@@ -91,7 +91,7 @@ async def admin_risghts(_, CallbackQuery):
         except QueueEmpty:
             pass
         await remove_active_chat(chat_id)
-        await Yukki.pytgcalls.leave_group_call(chat_id)
+        await OxyXmusic.pytgcalls.leave_group_call(chat_id)
         await CallbackQuery.message.reply_text(
             f"🎧 Voicechat End/Stopped by {CallbackQuery.from_user.mention}!",
             reply_markup=audio_markup2,
